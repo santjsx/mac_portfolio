@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #F5F5F7;
+  --surface-color: rgba(255, 255, 255, 0.7);
+  --surface-opaque: #FFFFFF;
+  --text-primary: #1D1D1F;
+  --text-secondary: #6E6E73;
+  --accent: #6366f1; /* Premium custom signature indigo */
+  --radius-window: 12px;
+  --radius-icon: 22%;
+  --radius-pill: 999px;
+  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", system-ui, sans-serif;
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --bg-color: #1C1C1E;
+  --surface-color: rgba(28, 28, 30, 0.7);
+  --surface-opaque: #1C1C1E;
+  --text-primary: #F5F5F7;
+  --text-secondary: #98989D;
+  --accent: #818cf8; /* Premium signature indigo for dark mode */
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  touch-action: none; /* Managed explicitly where needed */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.squircle {
+  border-radius: var(--radius-icon);
+}
+
+.glass {
+  background: var(--surface-color);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1px solid var(--border-color);
+}
+
+.glass-opaque {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(30px) saturate(190%);
+  -webkit-backdrop-filter: blur(30px) saturate(190%);
+  border: 1px solid var(--border-color);
+}
+
+.dark .glass-opaque {
+  background: rgba(28, 28, 30, 0.82);
+}
+
+/* Custom Scrollbars */
+.scroll-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 4px;
+  opacity: 0.3;
+}
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Wallpaper Anim */
+@keyframes gradientDrift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wallpaper-bg {
+  background-image: url('/wallpaper.png');
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.5s ease-in-out;
+}
+
+.dark .wallpaper-bg {
+  filter: brightness(0.65) contrast(1.05);
+}
+
+/* Target touch areas for iOS guidelines */
+.ios-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+/* Utility to override layout flash if reduced motion active */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: 0s !important;
+    animation-duration: 0.15s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.15s !important;
+    scroll-behavior: auto !important;
+  }
+}

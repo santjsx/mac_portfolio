@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="safariGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C6FF" />
+      <stop offset="100%" stop-color="#0072FF" />
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="56" fill="url(#safariGrad)" />
+  <circle cx="64" cy="64" r="50" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.3" />
+  <!-- Compass ticks -->
+  <g stroke="#FFFFFF" stroke-width="2" opacity="0.6">
+    <line x1="64" y1="12" x2="64" y2="18" />
+    <line x1="64" y1="110" x2="64" y2="116" />
+    <line x1="12" y1="64" x2="18" y2="64" />
+    <line x1="110" y1="64" x2="116" y2="64" />
+    <line x1="28" y1="28" x2="33" y2="33" />
+    <line x1="95" y1="95" x2="100" y2="100" />
+    <line x1="28" y1="95" x2="33" y2="90" />
+    <line x1="95" y1="28" x2="100" y2="33" />
+  </g>
+  <!-- Needle -->
+  <path d="M64 24 L78 64 L64 104 L50 64 Z" fill="#FF3B30" />
+  <path d="M64 64 L78 64 L64 104 L50 64 Z" fill="#EAEAEA" opacity="0.9" />
+  <circle cx="64" cy="64" r="6" fill="#FFFFFF" />
+  <circle cx="64" cy="64" r="2" fill="#0072FF" />
+</svg>

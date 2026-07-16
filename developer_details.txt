@@ -1,0 +1,77 @@
+# SANTHOSH REDDY 
+
+## PERSONAL PROFILE
+- Name: Santhosh Reddy
+- Role: Web Developer & Frontend Engineer
+- Handle: santjsx
+- Location: India
+- Status: Available / Open to Work
+- Domain: santhoshh.xyz
+- Email: heysanthoshreddy@gmail.com
+
+## TECHNICAL ARSENAL (SKILLS)
+- Languages: HTML5, CSS3, JavaScript (ES6+), TypeScript
+- Frameworks: React, Next.js, Astro
+- Tools: Git, Linux, NPM, Vite.js, VS Code, GitHub
+- Backend/Database: Node.js, Firebase, MongoDB, Supabase
+- Creative: GSAP (Animation), Three.js / OGL (WebGL), Cinematic UI Design
+
+## PROJECT INDEX
+1. The Hustle Planner
+   - URL: https://the-hustle-planner.vercel.app/
+   - Brief: High-performance productivity engine featuring deep work timers, habit loops, and spatial calendar layouts designed for elite creators.
+
+2. Hybrid OS
+   - URL: https://hybrid-os.vercel.app/
+   - Brief: A web-based desktop operating system mockup complete with window management, terminal emulator, and custom interactive widgets.
+
+3. PDF Studio
+   - URL: https://pdf-studio-sable.vercel.app/
+   - Brief: A powerful, client-side PDF editing suite supporting secure annotations, document merging, page extraction, and digital signatures.
+
+4. Track A Lot
+   - URL: https://track-a-lot.vercel.app/
+   - Brief: Intelligent personal finance tracker with automated categorization, recurring bill alerts, and interactive expense visualization.
+
+5. Uno Cypher
+   - URL: https://uno-cypher.vercel.app/
+   - Brief: Zero-dependency encryption panel utilizing AES-GCM web standards to secure messages with customized key derivation.
+
+## PROFESSIONAL PHASES
+- Phase 01 (2021-2023): Core software development & engineering foundations.
+- Phase 02 (2023-2024): Independent project development & animations.
+- Phase 03 (2024-Present): Frontend developer & engineering specialization.
+
+## DIGITAL INDEX (SOCIALS)
+- GitHub: https://github.com/santjsx
+- X (Twitter): https://x.com/Santhoshh_void
+- Instagram: https://www.instagram.com/whoissanthoshh?igsh=dHljNGpqbWIwamlx
+- LinkedIn: https://linkedin.com (Placeholder)
+
+## API INTEGRATIONS & MECHANISMS
+
+1. Lanyard API (REST/WebSocket)
+   - Task: Synchronizes real-time Discord presence and lifestyle data.
+   - Mechanism: Monitors a specific Discord ID (1284925883240550552). It also fetches "KV" data for hero quotes and skills.
+   - Key: bc6ba6a2b964e5c0610729a5c973b1d6
+
+2. Last.fm API (REST)
+   - Task: Real-time music activity tracking and "Now Playing" synchronization.
+   - User: santhoshh25
+   - Key: a403d71a4af1bacfddab789750be1c18
+
+3. TMDb (The Movie Database) API (REST)
+   - Task: Movie/TV metadata and cinematic poster retrieval.
+   - Key: 15511e43224695bd75148dab05bc81fb
+
+4. iTunes Search API (REST)
+   - Task: High-resolution artwork fetching.
+   - Mechanism: When a song is tracked via Last.fm, this API is queried with the track name to retrieve 600x600px high-resolution album covers, replacing lower-quality placeholders.
+
+5. People in Space API (JSON Endpoint)
+   - Task: Orbital headcount tracking.
+   - Mechanism: A specialized endpoint that returns the current number of humans on the International Space Station (ISS), updated live for the "Humans in Space" orbital widget.
+
+6. UI Avatars & Discord CDN
+   - Task: Dynamic asset generation and hosting.
+   - Mechanism: UI Avatars creates on-the-fly letter icons when a custom activity lacks a native logo. The Discord CDN serves high-speed images of specialized software (like VS Code or specialized games) currently being used by the developer.
